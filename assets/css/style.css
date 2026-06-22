@@ -284,7 +284,7 @@ footer {
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.8s ease forwards;
+  animation: fadeIn 0.8s ease both;
 }
 
 .stagger-1 { animation-delay: 0.1s; }
