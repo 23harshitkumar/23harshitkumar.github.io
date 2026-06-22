@@ -1,7 +1,8 @@
 title: GSoC 2026 | Accord Project Progress
 description: Tracking my weekly progress for Google Summer of Code 2026 with Accord Project.
 author: Harshit Kumar
-url: "https://harshitkumar.github.io"
+url: "https://23harshitkumar.github.io"
+baseurl: "/harshitkumar.github.io"
 
 markdown: kramdown
 theme: minima # We'll override the theme completely with our own layouts
