@@ -295,15 +295,19 @@ footer {
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    padding: 1.2rem 1rem;
-    gap: 1rem;
+    padding: 1rem;
+    gap: 0.8rem;
   }
   
   nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    align-items: center;
+    gap: 1.2rem;
+    width: 100%;
+    padding-top: 0.8rem;
+    border-top: 1px solid var(--card-border);
   }
   
   nav a {
