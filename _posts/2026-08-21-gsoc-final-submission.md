@@ -62,7 +62,16 @@ The core design challenge was running arbitrary user code safely without freezin
 
 Two store methods compose the full lifecycle:
 
-- [`initContract()`](https://github.com/accordproject/template-playground/blob/main/src/store/store.ts) calls `executeInSandbox(compiledLogicJs, 'init', [parsedData])` and stores the returned state.
+- [`initContract()`](https://github.com/accordproject/template-playground/blob/main/src/store/store.ts) calls `executeInSandbox(compiledLogicJs, 'init', [parsedData])` and stores the returned state:
+
+  ```js
+  const { state } = await executeInSandbox(
+    compiledLogicJs,
+    'init',
+    [parsedData]
+  );
+  ```
+
 - [`triggerContract()`](https://github.com/accordproject/template-playground/blob/main/src/store/store.ts) passes data, a request payload, and the current state to the sandbox's `trigger` method, then extracts the result, updated state, and emitted events (such as `PaymentObligation`) for rendering:
 
 ```js
