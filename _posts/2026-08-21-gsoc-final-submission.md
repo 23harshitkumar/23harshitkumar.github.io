@@ -17,7 +17,8 @@ Author: [Harshit Kumar](https://github.com/23harshitkumar), a contributor to [Go
 2. [Problem Statement](#problem-statement)
 3. [What Was Built](#what-was-built)
 4. [Future Direction](#future-direction)
-5. [Learnings and Experience](#learnings-and-experience)
+5. [Learnings](#learnings)
+6. [Experience](#experience)
 
 <br>
 
@@ -94,11 +95,13 @@ Future contributors can extend this work by:
 - **Error Reporting**: improving execution error messages to be more human-readable, prioritising root-cause errors first, and providing clearer diagnostics across the compile → init → trigger lifecycle.
 - **Template Library Integration**: improving integration so users can dynamically load and execute any sample from the Accord Project Template Library (Cicero) directly within the playground.
 
-### Learnings and Experience
+### Learnings
 
 This project was a massive learning opportunity that went beyond just writing code. I gained deep experience in building secure, cross-origin `postMessage` bridges to safely execute untrusted code, managing complex async state with Zustand, and integrating a TypeScript compilation toolchain into a browser build. More importantly, I learned the rigors of writing production-level code, anticipating edge cases, ensuring robust error handling, and writing software that is secure and maintainable. The weekly Technology Working Group calls also gave me incredible insight into making high-level architectural decisions in an open-source setting.
 
 Beyond the technical skills, this experience significantly improved my professional communication. Working closely with mentors across different time zones taught me how to articulate technical challenges clearly, ask the right questions, and collaborate effectively within a professional, globally distributed team.
+
+### Experience
 
 I owe a massive debt of gratitude to the entire Accord Project community for fostering such a welcoming environment. 
 
