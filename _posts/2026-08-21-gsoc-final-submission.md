@@ -79,7 +79,6 @@ Beyond the core pipeline, several features were built to complete the experience
 
 - **Adaptive Layout**: the panel layout detects whether a template contains logic and automatically shows or hides the Logic editor and Contract Runner.
 - **Shareable Links**: logic-enabled templates can be shared via URL with the logic code, request payload, and state encoded.
-- **Sample Templates**: logic-enabled samples (Late Payment, Service Agreement, Counter) ship out-of-the-box so users can explore immediately.
 - **Guided Tour**: an interactive Shepherd.js walkthrough introduces the logic workflow to new users.
 - **Obligations Tracker**: a visual component renders `PaymentObligation` events emitted by contract logic.
 
