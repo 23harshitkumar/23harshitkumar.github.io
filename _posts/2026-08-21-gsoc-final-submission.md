@@ -19,11 +19,13 @@ Author: [Harshit Kumar](https://github.com/23harshitkumar), a contributor to [Go
 4. [Future Direction](#future-direction)
 5. [Learnings and Experience](#learnings-and-experience)
 
----
+<br>
+
+***
 
 ### About the Project
 
-Accord Project templates consist of three layers: a **Concerto** data model, a **TemplateMark** natural language template, and **TypeScript logic** that defines how the contract reacts to transactions. The [Template Playground](https://playground.accordproject.org) previously supported only the first two. This project brings full Template Logic support to the playground — users can now author, compile, and execute contract logic entirely in the browser.
+Accord Project templates consist of three layers: a **Concerto** data model, a **TemplateMark** natural language template, and **TypeScript logic** that defines how the contract reacts to transactions. The [Template Playground](https://playground.accordproject.org) previously supported only the first two. This project brings full Template Logic support to the playground: users can now author, compile, and execute contract logic entirely in the browser.
 
 ### Problem Statement
 
@@ -78,19 +80,19 @@ const { result, state, emit } = await executeInSandbox(
 
 Beyond the core pipeline, several features were built to complete the experience:
 
-- **Adaptive Layout** — the panel layout detects whether a template contains logic and automatically shows or hides the Logic editor and Contract Runner.
-- **Shareable Links** — logic-enabled templates can be shared via URL with the logic code, request payload, and state encoded.
-- **Sample Templates** — logic-enabled samples (Late Payment, Service Agreement, Counter) ship out-of-the-box so users can explore immediately.
-- **Guided Tour** — an interactive Shepherd.js walkthrough introduces the logic workflow to new users.
-- **Obligations Tracker** — a visual component renders `PaymentObligation` events emitted by contract logic.
+- **Adaptive Layout**: the panel layout detects whether a template contains logic and automatically shows or hides the Logic editor and Contract Runner.
+- **Shareable Links**: logic-enabled templates can be shared via URL with the logic code, request payload, and state encoded.
+- **Sample Templates**: logic-enabled samples (Late Payment, Service Agreement, Counter) ship out-of-the-box so users can explore immediately.
+- **Guided Tour**: an interactive Shepherd.js walkthrough introduces the logic workflow to new users.
+- **Obligations Tracker**: a visual component renders `PaymentObligation` events emitted by contract logic.
 
 ### Future Direction
 
 Future contributors can extend this work by:
 
-- **User Experience & Intuitiveness** — streamlining the contract execution lifecycle to make the playground more intuitive for newcomers and more efficient for power users.
-- **Error Reporting** — improving execution error messages to be more human-readable, prioritising root-cause errors first, and providing clearer diagnostics across the compile → init → trigger lifecycle.
-- **Template Library Integration** — improving integration so users can dynamically load and execute any sample from the Accord Project Template Library (Cicero) directly within the playground.
+- **User Experience & Intuitiveness**: streamlining the contract execution lifecycle to make the playground more intuitive for newcomers and more efficient for power users.
+- **Error Reporting**: improving execution error messages to be more human-readable, prioritising root-cause errors first, and providing clearer diagnostics across the compile → init → trigger lifecycle.
+- **Template Library Integration**: improving integration so users can dynamically load and execute any sample from the Accord Project Template Library (Cicero) directly within the playground.
 
 ### Learnings and Experience
 
@@ -100,7 +102,7 @@ Beyond the technical skills, this experience significantly improved my professio
 
 I owe a massive debt of gratitude to the entire Accord Project community for fostering such a welcoming environment. 
 
-To my mentors — Matt Roberts, Dan Selman, Sanket Shevkar, and Priyanshu Singh — thank you for your patience, meticulous code reviews, and for pointing me in the right architectural direction. A specific shoutout goes to Sanket for our regular syncs that helped maintain the project's momentum.
+To my mentors, Matt Roberts, Dan Selman, Sanket Shevkar, and Priyanshu Singh, thank you for your patience, meticulous code reviews, and for pointing me in the right architectural direction. A specific shoutout goes to Sanket for our regular syncs that helped maintain the project's momentum.
 
 I also want to specifically acknowledge Diana Lease for her incredible availability. Her timely heads-ups, constant support, and willingness to help navigate organizational hurdles made a massive difference during development.
 
