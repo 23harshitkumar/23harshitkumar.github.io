@@ -26,11 +26,11 @@ Author: [Harshit Kumar](https://github.com/23harshitkumar), a contributor to [Go
 
 ### About the Project
 
-Accord Project templates consist of three layers: a **Concerto** data model, a **TemplateMark** natural language template, and **TypeScript logic** that defines how the contract reacts to transactions. The [Template Playground](https://playground.accordproject.org) previously supported only the first two. This project brings full Template Logic support to the playground: users can now author, compile, and execute contract logic entirely in the browser.
+Accord Project templates are composed of three fundamental layers: a **Concerto** data model, a **TemplateMark** natural language template, and **TypeScript logic** that dictates how the contract responds to transactions. While the [Template Playground](https://playground.accordproject.org) has historically supported the first two layers, it lacked native support for executing contract logic. This project bridges that gap by introducing full Template Logic support directly into the playground, empowering users to author, compile, and execute contract logic entirely within the browser.
 
 ### Problem Statement
 
-Without logic support, users had to rely on local CLI tools or external services to test how their contracts reacted to transactions. This fragmented the development experience and made it difficult for newcomers to grasp the full lifecycle of a template. The goal was to close this gap with a complete client-side pipeline: a TypeScript editor, a compilation step, and a sandboxed runtime.
+Previously, the absence of in-browser logic execution meant users were forced to rely on local CLI tools or external backend services to test their contracts. This disconnect fragmented the developer experience, introducing unnecessary friction and making it challenging for newcomers to visualize the complete lifecycle of a template. My objective was to eliminate this friction by building a cohesive, end-to-end client-side pipeline featuring a dedicated TypeScript editor, an in-browser compilation step, and a secure, sandboxed runtime environment.
 
 ### What Was Built
 
