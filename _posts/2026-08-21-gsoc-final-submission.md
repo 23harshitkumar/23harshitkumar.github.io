@@ -9,7 +9,7 @@ categories: update final
   <img src="/assets/images/gsoc-banner.png" alt="Accord Project & GSoC 2026 Banner" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px;">
 </div>
 
-Author: [Harshit Kumar](https://github.com/23harshitkumar), a contributor to [Google Summer of Code 2026](https://summerofcode.withgoogle.com/programs/2026/projects/TODO_PROJECT_ID).
+Author: [Harshit Kumar](https://github.com/23harshitkumar), a contributor to [Google Summer of Code 2026](https://summerofcode.withgoogle.com/programs/2026/projects/R4u8FyUV).
 
 ### Table of Contents
 
@@ -22,7 +22,7 @@ Author: [Harshit Kumar](https://github.com/23harshitkumar), a contributor to [Go
 
 <br>
 
-***
+---
 
 ### About the Project
 
@@ -64,21 +64,21 @@ Two store methods compose the full lifecycle:
 
 - [`initContract()`](https://github.com/accordproject/template-playground/blob/main/src/store/store.ts) calls `executeInSandbox(compiledLogicJs, 'init', [parsedData])` and stores the returned state:
 
-  ```js
-  const { state } = await executeInSandbox(
-    compiledLogicJs,
-    'init',
-    [parsedData]
-  );
-  ```
+```js
+const { state, events } = await executeInSandbox(
+  compiledLogicJs,
+  "init",
+  [parsedData]
+);
+```
 
 - [`triggerContract()`](https://github.com/accordproject/template-playground/blob/main/src/store/store.ts) passes data, a request payload, and the current state to the sandbox's `trigger` method, then extracts the result, updated state, and emitted events (such as `PaymentObligation`) for rendering:
 
 ```js
-const { result, state, emit } = await executeInSandbox(
+const { result, state, events } = await executeInSandbox(
   compiledLogicJs,
-  'trigger',
-  [parsedData, requestPayload, currentState]
+  "trigger",
+  [parsedData, parsedRequest, parsedState],
 );
 ```
 
@@ -107,7 +107,7 @@ Beyond the technical skills, this experience significantly improved my professio
 
 ### Experience
 
-I owe a massive debt of gratitude to the entire Accord Project community for fostering such a welcoming environment. 
+I owe a massive debt of gratitude to the entire Accord Project community for fostering such a welcoming environment.
 
 To my mentors, Matt Roberts, Dan Selman, Sanket Shevkar, and Priyanshu Singh, thank you for your patience, meticulous code reviews, and for pointing me in the right architectural direction. A specific shoutout goes to Sanket for our regular syncs that helped maintain the project's momentum.
 
