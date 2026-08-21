@@ -34,7 +34,7 @@ Previously, the absence of in-browser logic execution meant users were forced to
 
 ### What Was Built
 
-#### TypeScript Compilation
+#### Pipeline: TypeScript Compilation
 
 The [`compileLogic()`](https://github.com/accordproject/template-playground/blob/main/src/store/store.ts) method in the Zustand store uses `TemplateArchiveProcessor.compileLogic()` from `@accordproject/template-engine` to compile the user's TypeScript into JavaScript. The compiled output is then post-processed to make it evaluable via `new Function()`:
 
@@ -50,9 +50,7 @@ code += `\nreturn ${match[1]};\n`;
 
 If compilation fails, diagnostic errors with line numbers are mapped back to the Monaco editor for inline display.
 
-> _[TODO: Insert a screenshot showing the Logic Editor with inline compilation errors]_
-
-#### Sandboxed Execution
+#### Pipeline: Sandboxed Execution
 
 The core design challenge was running arbitrary user code safely without freezing the UI. The solution uses a three-layer isolation boundary:
 
@@ -60,7 +58,7 @@ The core design challenge was running arbitrary user code safely without freezin
 
 [`executeInSandbox(code, method, args)`](https://github.com/accordproject/template-playground/blob/main/src/store/store.ts) generates a monotonic `executionId`, registers a resolver callback in a module-scoped [`sandboxResolvers`](https://github.com/accordproject/template-playground/blob/main/src/store/sandboxResolvers.ts) Map, and posts a JSON message to the iframe via `postMessage`. The [`SandboxFrame`](https://github.com/accordproject/template-playground/blob/main/src/components/SandboxFrame.tsx) component renders a hidden `<iframe sandbox="allow-scripts">` (no `allow-same-origin`, so the browser assigns it a null origin). Inside, [`logic-handler.html`](https://github.com/accordproject/template-playground/blob/main/public/logic-handler.html) spawns a Blob Web Worker per execution with a 5-second kill-switch via `Worker.terminate()`. Even an infinite loop in user code cannot freeze the browser.
 
-#### Contract State Lifecycle
+#### Pipeline: Contract State Lifecycle
 
 Two store methods compose the full lifecycle:
 
@@ -74,8 +72,6 @@ const { result, state, emit } = await executeInSandbox(
   [parsedData, requestPayload, currentState]
 );
 ```
-
-> _[TODO: Insert a GIF showing Init → Trigger → state output workflow]_
 
 #### Supporting Features
 
