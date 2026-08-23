@@ -94,6 +94,20 @@ Beyond the core pipeline, several features were built to complete the experience
 - **Guided Tour**: an interactive Shepherd.js walkthrough introduces the logic workflow to new users.
 - **Obligations Tracker**: a visual component renders `PaymentObligation` events emitted by contract logic.
 
+### Code Contributions
+
+To satisfy Google Summer of Code requirements, all code authored during this project can be found in the `accordproject/template-playground` repository. 
+
+**[View all my Pull Requests on GitHub](https://github.com/accordproject/template-playground/pulls?q=is%3Apr+author%3A23harshitkumar)**
+
+Below are the key Pull Requests that make up the core features of this project:
+
+| Feature | Pull Request |
+| :--- | :--- |
+| **Logic Editor & Compilation** | [PR #TODO](https://github.com/accordproject/template-playground/pull/TODO) |
+| **Sandboxed Execution Environment** | [PR #TODO](https://github.com/accordproject/template-playground/pull/TODO) |
+| **State Lifecycle & UI Integration** | [PR #TODO](https://github.com/accordproject/template-playground/pull/TODO) |
+
 ### Future Direction
 
 Future contributors can extend this work by:
