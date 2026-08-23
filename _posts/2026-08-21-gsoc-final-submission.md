@@ -96,9 +96,9 @@ Beyond the core pipeline, several features were built to complete the experience
 
 All the code I've authored during this project can be found in the `accordproject/template-playground` repository.
 
-**[View all my Pull Requests on GitHub](https://github.com/accordproject/template-playground/pulls?q=is%3Apr+author%3A23harshitkumar)**
+**[View all my Pull Requests on GitHub here!](https://github.com/accordproject/template-playground/pulls?q=is%3Apr+author%3A23harshitkumar)**
 
-Below are the key Pull Requests that make up the core features of this project:
+Below are some of the key Pull Requests that make up the core features of this project:
 
 | Feature                             | &nbsp;&nbsp;&nbsp;&nbsp;Pull Request                                     |
 | :---------------------------------- | :----------------------------------------------------------------------- |
