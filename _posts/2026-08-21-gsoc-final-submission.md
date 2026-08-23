@@ -68,11 +68,9 @@ Two store methods compose the full lifecycle:
 - [`initContract()`](https://github.com/accordproject/template-playground/blob/main/src/store/store.ts) calls `executeInSandbox(compiledLogicJs, 'init', [parsedData])` and stores the returned state:
 
 ```js
-const { state, events } = await executeInSandbox(
-  compiledLogicJs,
-  "init",
-  [parsedData]
-);
+const { state, events } = await executeInSandbox(compiledLogicJs, "init", [
+  parsedData,
+]);
 ```
 
 - [`triggerContract()`](https://github.com/accordproject/template-playground/blob/main/src/store/store.ts) passes data, a request payload, and the current state to the sandbox's `trigger` method, then extracts the result, updated state, and emitted events (such as `PaymentObligation`) for rendering:
@@ -96,19 +94,19 @@ Beyond the core pipeline, several features were built to complete the experience
 
 ### Code Contributions
 
-To satisfy Google Summer of Code requirements, all code authored during this project can be found in the `accordproject/template-playground` repository. 
+To satisfy Google Summer of Code requirements, all code authored during this project can be found in the `accordproject/template-playground` repository.
 
 **[View all my Pull Requests on GitHub](https://github.com/accordproject/template-playground/pulls?q=is%3Apr+author%3A23harshitkumar)**
 
 Below are the key Pull Requests that make up the core features of this project:
 
-| Feature | Pull Request |
-| :--- | :--- |
-| **Compilation Pipeline** | [PR #923](https://github.com/accordproject/template-playground/pull/923) |
+| Feature                             | Pull Request                                                             |
+| :---------------------------------- | :----------------------------------------------------------------------- |
+| **Compilation Pipeline**            | [PR #923](https://github.com/accordproject/template-playground/pull/923) |
 | **Sandboxed Execution Environment** | [PR #932](https://github.com/accordproject/template-playground/pull/932) |
-| **Init Logic Execution** | [PR #TODO](https://github.com/accordproject/template-playground/pull/TODO) |
-| **Trigger Logic Execution** | [PR #TODO](https://github.com/accordproject/template-playground/pull/TODO) |
-| **Shareable Links** | [PR #TODO](https://github.com/accordproject/template-playground/pull/TODO) |
+| **Init Logic Execution**            | [PR #935](https://github.com/accordproject/template-playground/pull/935) |
+| **Trigger Logic Execution**         | [PR #936](https://github.com/accordproject/template-playground/pull/936) |
+| **Shareable Links**                 | [PR #943](https://github.com/accordproject/template-playground/pull/943) |
 
 ### Future Direction
 
