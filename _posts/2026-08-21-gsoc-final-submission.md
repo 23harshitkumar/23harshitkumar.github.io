@@ -11,6 +11,9 @@ categories: update final
 
 Author: [Harshit Kumar](https://github.com/23harshitkumar), a contributor to [Google Summer of Code 2026](https://summerofcode.withgoogle.com/programs/2026/projects/R4u8FyUV).
 
+**Organization:** [Accord Project](https://accordproject.org)  
+**Repository:** [accordproject/template-playground](https://github.com/accordproject/template-playground)
+
 ### Table of Contents
 
 1. [About the Project](#about-the-project)
