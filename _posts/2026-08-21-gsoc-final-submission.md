@@ -104,9 +104,11 @@ Below are the key Pull Requests that make up the core features of this project:
 
 | Feature | Pull Request |
 | :--- | :--- |
-| **Logic Editor & Compilation** | [PR #TODO](https://github.com/accordproject/template-playground/pull/TODO) |
-| **Sandboxed Execution Environment** | [PR #TODO](https://github.com/accordproject/template-playground/pull/TODO) |
-| **State Lifecycle & UI Integration** | [PR #TODO](https://github.com/accordproject/template-playground/pull/TODO) |
+| **Compilation Pipeline** | [PR #923](https://github.com/accordproject/template-playground/pull/923) |
+| **Sandboxed Execution Environment** | [PR #932](https://github.com/accordproject/template-playground/pull/932) |
+| **Init Logic Execution** | [PR #TODO](https://github.com/accordproject/template-playground/pull/TODO) |
+| **Trigger Logic Execution** | [PR #TODO](https://github.com/accordproject/template-playground/pull/TODO) |
+| **Shareable Links** | [PR #TODO](https://github.com/accordproject/template-playground/pull/TODO) |
 
 ### Future Direction
 
