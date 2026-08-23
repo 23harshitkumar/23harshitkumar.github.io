@@ -94,13 +94,13 @@ Beyond the core pipeline, several features were built to complete the experience
 
 ### Code Contributions
 
-To satisfy Google Summer of Code requirements, all code authored during this project can be found in the `accordproject/template-playground` repository.
+All the code I've authored during this project can be found in the `accordproject/template-playground` repository.
 
 **[View all my Pull Requests on GitHub](https://github.com/accordproject/template-playground/pulls?q=is%3Apr+author%3A23harshitkumar)**
 
 Below are the key Pull Requests that make up the core features of this project:
 
-| Feature                             | Pull Request                                                             |
+| Feature                             | &nbsp;&nbsp;&nbsp;&nbsp;Pull Request                                     |
 | :---------------------------------- | :----------------------------------------------------------------------- |
 | **Compilation Pipeline**            | [PR #923](https://github.com/accordproject/template-playground/pull/923) |
 | **Sandboxed Execution Environment** | [PR #932](https://github.com/accordproject/template-playground/pull/932) |
