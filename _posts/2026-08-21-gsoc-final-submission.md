@@ -100,13 +100,13 @@ All the code I've authored during this project can be found in the `accordprojec
 
 Below are some of the key Pull Requests that make up the core features of this project:
 
-| Feature                             | &nbsp;&nbsp;&nbsp;&nbsp;Pull Request                                     |
-| :---------------------------------- | :----------------------------------------------------------------------- |
-| **Compilation Pipeline**            | [PR #923](https://github.com/accordproject/template-playground/pull/923) |
-| **Sandboxed Execution Environment** | [PR #932](https://github.com/accordproject/template-playground/pull/932) |
-| **Init Logic Execution**            | [PR #935](https://github.com/accordproject/template-playground/pull/935) |
-| **Trigger Logic Execution**         | [PR #936](https://github.com/accordproject/template-playground/pull/936) |
-| **Shareable Links**                 | [PR #943](https://github.com/accordproject/template-playground/pull/943) |
+| Feature | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pull Request |
+| :--- | :--- |
+| **Compilation Pipeline** | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PR #923](https://github.com/accordproject/template-playground/pull/923) |
+| **Sandboxed Execution Environment** | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PR #932](https://github.com/accordproject/template-playground/pull/932) |
+| **Init Logic Execution** | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PR #935](https://github.com/accordproject/template-playground/pull/935) |
+| **Trigger Logic Execution** | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PR #936](https://github.com/accordproject/template-playground/pull/936) |
+| **Shareable Links** | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PR #943](https://github.com/accordproject/template-playground/pull/943) |
 
 ### Future Direction
 
